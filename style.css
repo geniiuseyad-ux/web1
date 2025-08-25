@@ -75,6 +75,13 @@
 .glitch {
     position: relative;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #ecf0f1, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
 .glitch::before,
@@ -85,7 +92,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, #e74c3c, #f1c40f);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -217,8 +225,11 @@ header .container {
 }
 
 .tagline {
-    font-size: 0.9rem;
-    opacity: 0.9;
+    font-size: 1rem;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+    margin-top: 5px;
 }
 
 nav ul {
