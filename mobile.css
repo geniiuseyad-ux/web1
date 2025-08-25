@@ -1,0 +1,215 @@
+/* Mobile-First Styles */
+@media screen and (max-width: 768px) {
+    /* General */
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header */
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 0.8rem;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        padding-top: 60px;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-shapes {
+        opacity: 0.3;
+    }
+
+    /* Sections */
+    section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Services */
+    .services-grid {
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    /* Skills */
+    .skill-category {
+        margin-bottom: 2rem;
+    }
+
+    .skill-bar {
+        height: 8px;
+    }
+
+    /* Projects */
+    .project-filters {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+
+    .project-card {
+        box-shadow: none;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .project-info {
+        padding: 1rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    input, textarea {
+        padding: 10px;
+        margin-bottom: 1rem;
+    }
+
+    /* Touch Optimizations */
+    .btn {
+        min-height: 44px;
+        padding: 12px 24px;
+    }
+
+    .nav-link {
+        min-height: 44px;
+        padding: 12px 15px;
+    }
+
+    /* Fix for iOS input zoom */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    /* Additional Small Screen Optimizations */
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-card {
+        margin: 0 -15px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .mobile-menu {
+        width: 100%;
+    }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 50px;
+    }
+
+    .mobile-menu {
+        padding-top: 20px;
+    }
+
+    .mobile-menu-footer {
+        display: none;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .mobile-menu {
+        background: #121212;
+    }
+
+    .project-card {
+        background: #1a1a1a;
+        border-color: rgba(255,255,255,0.1);
+    }
+
+    input, textarea {
+        background: #1a1a1a;
+        border-color: rgba(255,255,255,0.1);
+        color: #fff;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn {
+        border: 2px solid currentColor;
+    }
+
+    .nav-link {
+        text-decoration: underline;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .skill-progress {
+        transition: none !important;
+    }
+}
